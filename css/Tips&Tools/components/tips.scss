@@ -1,0 +1,91 @@
+@import "../../style";
+
+.tip {
+  align-items: center;
+  padding: 30px 0px;
+  &:first-of-type {
+    border-top: 2px solid $primary-color;
+  }
+  border-bottom: 2px solid $primary-color;
+  &.expanded {
+    flex-direction: column;
+    .tip-text {
+      h1 {
+        // margin-right: 50px;
+        opacity: 0;
+        // display: none;
+        transition: 0.5s;
+      }
+      h3 {
+        font-size: 23px;
+        margin-left: -20px;
+        margin-top: 0px;
+        transition: 0.5s;
+      }
+    }
+    .tip-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    span {
+      margin-top: -10px;
+      margin-left: 50px;
+      &::before {
+        content: "\f056";
+      }
+    }
+    transition: 0.4s;
+  }
+  button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    span {
+      // margin-top: -45px;
+      margin-right: 10px;
+      font-size: 40px;
+      color: $primary-color;
+    }
+  }
+}
+.tip-title {
+  justify-content: space-between;
+  width: 100%;
+}
+.tip-info {
+  display: none;
+  h4 {
+    font-family: "Aclonica";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #191919;
+  }
+}
+.tip-text {
+  width: 100%;
+  padding: 0px 20px;
+  h3 {
+    font-family: "Aclonica";
+    margin-left: 25px;
+    margin-top: 25px;
+    transition: 0.3s;
+  }
+  h1 {
+    margin: 0;
+    opacity: 1;
+    transition: 0.3s;
+    font-family: "Actor";
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #e5e5e5;
+  }
+}

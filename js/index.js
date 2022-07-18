@@ -1,8 +1,7 @@
-const sidebarBox = document.querySelector("#box"),
-  menuBtn = document.querySelector("#btn"),
-  pageWrapper = document.querySelector("#page-wrapper"),
-  sidebarBtns = document.querySelectorAll(".item"),
-  dotBtns = document.querySelectorAll(".dot-btn");
+(menuBtn = document.querySelector("#btn")),
+  (pageWrapper = document.querySelector("#page-wrapper")),
+  (sidebarBtns = document.querySelectorAll(".item")),
+  (dotBtns = document.querySelectorAll(".dot-btn"));
 
 dotBtns;
 
@@ -72,7 +71,11 @@ const cyberEssentials = () => {
   });
 };
 window.onload = () => {
-  // cyberEssentials();
+  const splitHref = window.location.href.split("/");
+  const currPage = splitHref[splitHref.length - 1].replace(".html", "");
+  if (currPage === "home") {
+    cyberEssentials();
+  }
   activeTab();
 };
 menuBtn.addEventListener("click", (event) => {

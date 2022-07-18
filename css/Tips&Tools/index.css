@@ -1,3 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-style: normal;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #22bf95;
+  border-radius: 25px;
+  width: 255px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+  text-transform: uppercase;
+}
+.btn h4 {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+}
+
+.contained {
+  background-color: #22bf95;
+  color: white;
+  transition: 0.4s;
+}
+.contained:hover {
+  background-color: #1d9777;
+  transition: 0.4s;
+}
+
+.outlined {
+  border: 1px solid #22bf95;
+  transition: 0.3s;
+}
+.outlined:hover {
+  background-color: rgb(243, 243, 243);
+  transition: 0.4s;
+}
+
 .main-text {
   width: 385px;
   font-size: 80px;
@@ -7,4 +78,61 @@
   font-family: "Actor", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+.tabs-cont {
+  margin-top: 50px;
+}
+
+.tips {
+  margin-top: 80px;
+  border-top: 2px solid #e5e5e5;
+  padding: 20px 45px;
+}
+
+.tabs {
+  justify-content: space-between;
+  border-top: 4px solid #22bf95;
+  border-radius: 5px;
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.06);
+}
+.tabs span {
+  transform: translateY(30%);
+  background-color: #e5e5e5;
+  width: 2px;
+  height: 60%;
+}
+.tabs div {
+  padding-left: 5.5vh;
+  padding-right: 5.5vh;
+}
+
+.tab-title {
+  text-align: center;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7f7f7f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab-title:hover {
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.tab-title.current-tab {
+  color: #22bf95;
+}
+
+.middle-tab {
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+
+.tip-list {
+  margin-top: 50px;
 }/*# sourceMappingURL=index.css.map */

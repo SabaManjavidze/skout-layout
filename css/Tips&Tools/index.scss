@@ -1,3 +1,4 @@
+@import "../style";
 .main-text {
   width: 385px;
   font-size: 80px;
@@ -7,4 +8,57 @@
   font-family: "Actor", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+.tabs-cont {
+  margin-top: 50px;
+}
+.tips {
+  margin-top: 80px;
+  border-top: 2px solid #e5e5e5;
+  padding: 20px 45px;
+}
+.tabs {
+  justify-content: space-between;
+  border-top: 4px solid $primary-color;
+  border-radius: 5px;
+  box-shadow: -1px 2px 3px rgb(0 0 0 / 6%);
+  //   background-color: $dullWhite;
+  //   width: 80%;
+  span {
+    transform: translateY(30%);
+    background-color: #e5e5e5;
+    width: 2px;
+    height: 60%;
+  }
+  div {
+    padding-left: 5.5vh;
+    padding-right: 5.5vh;
+  }
+}
+.tab-title {
+  text-align: center;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7f7f7f;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+    transition: 0.4s;
+  }
+  &.current-tab {
+    color: $primary-color;
+  }
+}
+.middle-tab {
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+.tip-list {
+  margin-top: 50px;
 }

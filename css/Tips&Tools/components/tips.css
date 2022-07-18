@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-style: normal;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #22bf95;
+  border-radius: 25px;
+  width: 255px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+  text-transform: uppercase;
+}
+.btn h4 {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+}
+
+.contained {
+  background-color: #22bf95;
+  color: white;
+  transition: 0.4s;
+}
+.contained:hover {
+  background-color: #1d9777;
+  transition: 0.4s;
+}
+
+.outlined {
+  border: 1px solid #22bf95;
+  transition: 0.3s;
+}
+.outlined:hover {
+  background-color: rgb(243, 243, 243);
+  transition: 0.4s;
+}
+
+.tip {
+  align-items: center;
+  padding: 30px 0px;
+  border-bottom: 2px solid #22bf95;
+}
+.tip:first-of-type {
+  border-top: 2px solid #22bf95;
+}
+.tip.expanded {
+  flex-direction: column;
+  transition: 0.4s;
+}
+.tip.expanded .tip-text h1 {
+  opacity: 0;
+  transition: 0.5s;
+}
+.tip.expanded .tip-text h3 {
+  font-size: 23px;
+  margin-left: -20px;
+  margin-top: 0px;
+  transition: 0.5s;
+}
+.tip.expanded .tip-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tip.expanded span {
+  margin-top: -10px;
+  margin-left: 50px;
+}
+.tip.expanded span::before {
+  content: "\f056";
+}
+.tip button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.tip button:focus {
+  outline: none;
+}
+.tip button span {
+  margin-right: 10px;
+  font-size: 40px;
+  color: #22bf95;
+}
+
+.tip-title {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tip-info {
+  display: none;
+}
+.tip-info h4 {
+  font-family: "Aclonica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  color: #191919;
+}
+
+.tip-text {
+  width: 100%;
+  padding: 0px 20px;
+}
+.tip-text h3 {
+  font-family: "Aclonica";
+  margin-left: 25px;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.tip-text h1 {
+  margin: 0;
+  opacity: 1;
+  transition: 0.3s;
+  font-family: "Actor";
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #e5e5e5;
+}/*# sourceMappingURL=tips.css.map */

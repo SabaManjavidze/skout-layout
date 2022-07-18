@@ -10,7 +10,11 @@ const activeTab = () => {
   sidebarBtns.forEach((item) => {
     // console.log(sidebarBtns);
     const href = window.location.href.split("/");
-    if (href[href.length - 1].includes(item.innerText.toLowerCase())) {
+    if (
+      href[href.length - 1]
+        .split(".html")[0]
+        .includes(item.innerText.toLowerCase().replaceAll(" ", ""))
+    ) {
       item.classList.add("active");
     }
   });
@@ -68,7 +72,7 @@ const cyberEssentials = () => {
   });
 };
 window.onload = () => {
-  cyberEssentials();
+  // cyberEssentials();
   activeTab();
 };
 menuBtn.addEventListener("click", (event) => {

@@ -23,6 +23,33 @@ body {
   flex-direction: column;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #22bf95;
+  border-radius: 25px;
+  width: 255px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+  text-transform: uppercase;
+}
+.btn h4 {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+}
+
 .contained {
   background-color: #22bf95;
   color: white;
@@ -33,26 +60,20 @@ body {
   transition: 0.4s;
 }
 
-.main-menu {
+.outlined {
+  border: 1px solid #22bf95;
+  transition: 0.3s;
+}
+.outlined:hover {
+  background-color: rgb(243, 243, 243);
+  transition: 0.4s;
+}
+
+.skout-info {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding-bottom: 30px;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-image: linear-gradient(
-    20deg,
-    hsl(161deg, 99%, 46%) 0%,
-    hsl(170deg, 100%, 44%) 7%,
-    hsl(179deg, 100%, 42%) 19%,
-    hsl(186deg, 100%, 44%) 35%,
-    hsl(190deg, 86%, 48%) 51%,
-    hsl(186deg, 100%, 44%) 68%,
-    hsl(179deg, 100%, 42%) 84%,
-    hsl(170deg, 100%, 44%) 96%,
-    hsl(161deg, 99%, 46%) 100%
-  );
 }
 
 .main-text {
@@ -64,40 +85,6 @@ body {
   font-family: "Actor", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-}
-
-.desc-cont {
-  display: flex;
-  justify-content: center;
-}
-.desc-cont .desc {
-  text-align: left;
-  font-family: "Aclonica", sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  width: 320px;
-  border-left: 1px solid white;
-  padding-left: 35px;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
-  line-height: 24px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Actor", sans-serif;
-  letter-spacing: 1px;
-  width: -webkit-fill-available;
-  padding: 10px 30px;
-}
-
-.skout-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .skout-info-text {
@@ -134,4 +121,4 @@ body {
   letter-spacing: 1.66667px;
   text-transform: uppercase;
   color: #ffffff;
-} /*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

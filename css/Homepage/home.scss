@@ -1,15 +1,12 @@
 @import "../style";
 
-.main-menu {
+.skout-info {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding-bottom: 30px;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-image: $primary-gradient;
 }
+
 .main-text {
   width: 385px;
   font-size: 80px;
@@ -19,37 +16,6 @@
   font-family: "Actor", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-}
-.desc-cont {
-  display: flex;
-  justify-content: center;
-  .desc {
-    text-align: left;
-    font-family: "Aclonica", sans-serif;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 400;
-    width: 320px;
-    border-left: 1px solid white;
-    padding-left: 35px;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
-    line-height: 24px;
-  }
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Actor", sans-serif;
-  letter-spacing: 1px;
-  width: -webkit-fill-available;
-  padding: 10px 30px;
-}
-.skout-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .skout-info-text {
   text-align: left;

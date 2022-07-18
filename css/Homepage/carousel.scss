@@ -1,0 +1,68 @@
+@import "../style";
+
+.slick-dots {
+  position: absolute;
+  // right: auto;
+  list-style-type: none;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+    left: 4px;
+    transition: top 0.5s ease-out;
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    transition: left 0.5s ease-out;
+  }
+  li {
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+  }
+}
+.dot-btn {
+  padding: 0px;
+  border: 0;
+  position: relative;
+  background-color: $primary-color;
+  margin: 0px 10px;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
+// .slick-active {
+//   border: 2px solid $primary-color !important;
+// }
+
+.problems-we-solve {
+  font-family: "Aclonica", sans-serif;
+  padding-left: 25px;
+}
+.carousel-item {
+  width: 48vh;
+  margin-top: 40px;
+  .carousel-title {
+    font-family: "Acme";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .carousel-desc {
+    font-family: "Aclonica";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-style: normal;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.contained {
+  background-color: #22bf95;
+  color: white;
+  transition: 0.4s;
+}
+.contained:hover {
+  background-color: #1d9777;
+  transition: 0.4s;
+}
+
+.essentials {
+  font-family: "Aclonica", sans-serif;
+  margin-top: 10vh;
+}
+.essentials h1 {
+  max-width: 30vh;
+  line-height: 50px;
+  margin-left: 45px;
+  margin-bottom: 60px;
+}
+
+.essential-card {
+  display: flex;
+  list-style-type: none;
+  padding: 35px 43px 30px 56px;
+  border-left: 7px solid #22bf95;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+  border-radius: 10px;
+  width: 37vh;
+  height: 190px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.essential-card .card-desc {
+  flex: 1;
+}
+.essential-card .card-desc p {
+  font-size: 13px;
+  font-weight: 600;
+  width: 200px;
+  line-height: 25px;
+}
+.essential-card .card-desc h3 {
+  font-size: 20px;
+}
+.essential-card .card-icon {
+  width: 100px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.essential-card .card-icon img {
+  max-width: 100%;
+}
+.essential-card .tool-tip {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #b2b2b2;
+  font-size: 25px;
+} /*# sourceMappingURL=essentials.css.map */

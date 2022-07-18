@@ -1,0 +1,56 @@
+@import "../style";
+
+.essentials {
+  font-family: "Aclonica", sans-serif;
+  margin-top: 10vh;
+  h1 {
+    max-width: 30vh;
+    line-height: 50px;
+    margin-left: 45px;
+    margin-bottom: 60px;
+  }
+}
+
+.essential-card {
+  display: flex;
+  list-style-type: none;
+  padding: 35px 43px 30px 56px;
+  border-left: 7px solid $primary-color;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 10px;
+  border-radius: 10px;
+  width: 37vh;
+  height: 190px;
+  position: relative;
+  margin-bottom: 15px;
+  .card-desc {
+    flex: 1;
+    p {
+      font-size: 13px;
+      font-weight: 600;
+      width: 200px;
+      line-height: 25px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .card-icon {
+    width: 100px;
+    // background: black;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .tool-tip {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #b2b2b2;
+    font-size: 25px;
+    // z-index: 3;
+  }
+}

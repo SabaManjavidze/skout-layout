@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-style: normal;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #22bf95;
+  border-radius: 25px;
+  width: 255px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+  text-transform: uppercase;
+}
+.btn h4 {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+}
+
+.contained {
+  background-color: #22bf95;
+  color: white;
+  transition: 0.4s;
+}
+.contained:hover {
+  background-color: #1d9777;
+  transition: 0.4s;
+}
+
+.outlined {
+  border: 1px solid #22bf95;
+  transition: 0.3s;
+}
+.outlined:hover {
+  background-color: rgb(243, 243, 243);
+  transition: 0.4s;
+}
+
+.slick-dots {
+  position: absolute;
+  list-style-type: none;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+.slick-dots::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #22bf95;
+  left: 4px;
+  transition: top 0.5s ease-out;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  transition: left 0.5s ease-out;
+}
+.slick-dots li {
+  position: relative;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.dot-btn {
+  padding: 0px;
+  border: 0;
+  position: relative;
+  background-color: #22bf95;
+  margin: 0px 10px;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
+
+.problems-we-solve {
+  font-family: "Aclonica", sans-serif;
+  padding-left: 25px;
+}
+
+.carousel-item {
+  width: 48vh;
+  margin-top: 40px;
+}
+.carousel-item .carousel-title {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.carousel-item .carousel-desc {
+  font-family: "Aclonica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+}/*# sourceMappingURL=carousel.css.map */

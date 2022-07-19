@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +25,18 @@ body {
 
 .flex-column {
   flex-direction: column;
+}
+
+.mt-6 {
+  margin-top: 60px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.mt-4 {
+  margin-top: 40px;
 }
 
 .btn {
@@ -84,7 +100,9 @@ body {
   margin-top: 50px;
 }
 
-.tips {
+.tips,
+.faqs,
+.glossary {
   margin-top: 80px;
   border-top: 2px solid #e5e5e5;
   padding: 20px 45px;
@@ -108,9 +126,10 @@ body {
 }
 
 .tab-title {
+  margin: 10px 0px;
+  text-decoration: none;
   text-align: center;
   font-family: "Acme";
-  font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
@@ -118,6 +137,7 @@ body {
   text-transform: uppercase;
   color: #7f7f7f;
   cursor: pointer;
+  display: block;
   transition: 0.3s;
 }
 .tab-title:hover {

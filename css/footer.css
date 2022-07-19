@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-style: normal;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.mt-6 {
+  margin-top: 60px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #22bf95;
+  border-radius: 25px;
+  width: 255px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+  text-transform: uppercase;
+}
+.btn h4 {
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+}
+
+.contained {
+  background-color: #22bf95;
+  color: white;
+  transition: 0.4s;
+}
+.contained:hover {
+  background-color: #1d9777;
+  transition: 0.4s;
+}
+
+.outlined {
+  border: 1px solid #22bf95;
+  transition: 0.3s;
+}
+.outlined:hover {
+  background-color: rgb(243, 243, 243);
+  transition: 0.4s;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 30px;
+  padding-bottom: 70px;
+}
+
+footer {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.footer-pages {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  flex-wrap: wrap;
+}
+
+.page-link {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 34px;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #7f7f7f;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.page-link:hover {
+  color: #4c4c4c;
+  transition: 0.4s;
+}
+
+.call-soc .page-link {
+  margin: 0;
+  line-height: 20px;
+}
+
+.phone-number {
+  margin: 0;
+  font-family: "Aclonica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  color: #7f7f7f;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 33px;
+  margin: 0 0 17px;
+}
+
+.social-links {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  flex-wrap: wrap;
+}
+.social-links div {
+  padding: 15px;
+  cursor: pointer;
+}
+.social-links div svg {
+  width: 25px;
+  height: 25px;
+}
+
+.youtube-link svg path {
+  transition: 0.3s;
+}
+.youtube-link:hover svg path {
+  fill: #ff0000;
+  transition: 0.4s;
+}
+
+.linkedin-link svg path {
+  transition: 0.3s;
+}
+.linkedin-link:hover svg path {
+  fill: #0961b8;
+  transition: 0.4s;
+}
+
+.facebook-link svg path {
+  transition: 0.3s;
+}
+.facebook-link:hover svg path {
+  fill: #3f62a9;
+  transition: 0.4s;
+}
+
+.twitter-link svg path {
+  transition: 0.3s;
+}
+.twitter-link:hover svg path {
+  fill: #1da1f2;
+  transition: 0.4s;
+}
+
+.skout-footer-logo {
+  width: 160px;
+  margin-right: 25px;
+}
+.skout-footer-logo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts {
+  margin-top: 40px;
+}
+
+.contact {
+  border-bottom: 1.5px solid #22bf95;
+  height: 150px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact:first-of-type {
+  border-top: 1.5px solid #22bf95;
+}
+
+.contact-title-cont {
+  flex: 1.2;
+}
+
+.contact-info-cont {
+  flex: 1;
+}
+
+.contact-title {
+  font-family: "Aclonica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7f7f7f;
+}
+
+.contact-info {
+  font-family: "Aclonica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4c4c4c;
+}
+
+.view-map {
+  font-family: "Aclonica";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22bf95;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.view-map:hover {
+  color: #1d9777;
+  transition: 0.4s;
+}
+.view-map:focus {
+  outline: none;
+}/*# sourceMappingURL=footer.css.map */

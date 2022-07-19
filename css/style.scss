@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +13,7 @@ $dullWhite: #f6f6f6;
 $gray: #7f7f7f;
 $primary-color: #22bf95;
 $secondary-color: #1d9777;
+
 $primary-gradient: linear-gradient(
   20deg,
   hsl(161deg 99% 46%) 0%,
@@ -22,6 +26,10 @@ $primary-gradient: linear-gradient(
   hsl(170deg 100% 44%) 96%,
   hsl(161deg 99% 46%) 100%
 );
+$twitter-color: #1da1f2;
+$youtube-color: #ff0000;
+$linkedin-color: #0961b8;
+$facebook-color: #3f62a9;
 .d-flex {
   display: flex;
 }
@@ -33,6 +41,15 @@ $primary-gradient: linear-gradient(
 }
 .flex-column {
   flex-direction: column;
+}
+.mt-6 {
+  margin-top: 60px;
+}
+.mt-5 {
+  margin-top: 50px;
+}
+.mt-4 {
+  margin-top: 40px;
 }
 .btn {
   display: flex;

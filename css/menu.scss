@@ -38,14 +38,18 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
   font-family: "Actor", sans-serif;
   letter-spacing: 1px;
   width: -webkit-fill-available;
+  width: -moz-available;
   padding: 10px 30px;
 }
 #btn {
   position: fixed;
-  z-index: 5;
+  z-index: 16;
   top: 35px;
   right: 35px;
   cursor: pointer;
+  &.active {
+    z-index: 17;
+  }
   transition: right 500ms $easing;
   div {
     width: 35px;
@@ -60,6 +64,7 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
   justify-content: center;
   align-items: center;
   width: -webkit-fill-available;
+  width: -moz-available;
   flex-direction: column;
   margin-top: 20px;
 }
@@ -88,13 +93,7 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
     color: white;
     border-color: $primary-color;
     transition: 0.4s ease-in-out;
-    // padding: 2px;
-    // border: 1px solid $blue;
   }
-  //   box-shadow: -6px 7px 11px rgba(0, 0, 0, 0.096);
-  // font-size: 10px;
-  // padding-left: 60px;
-  // padding-right: 60px;
 }
 #btn.active {
   //   right: 30px;
@@ -112,10 +111,8 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
     transform: translateY(-15px) rotate(-45deg);
   }
 }
-
 #box {
   position: fixed;
-  z-index: 4;
   overflow: auto;
   top: 0px;
   right: -275px;
@@ -123,14 +120,17 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
   opacity: 0;
   padding: 20px 0px;
   height: 100%;
-  background-color: $dullWhite;
   color: $black;
+  background: rgba(255, 255, 255, 0.608);
+  backdrop-filter: blur(10px);
   transition: all 350ms $easing;
-}
-
-#box.active {
-  right: 0px;
-  opacity: 1;
+  will-change: transform, opacity;
+  overflow-x: hidden;
+  &.active {
+    right: 0px;
+    z-index: 16;
+    opacity: 1;
+  }
 }
 
 #items {
@@ -173,9 +173,4 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
 #btn,
 #btn * {
   will-change: transform;
-}
-
-#box {
-  will-change: transform, opacity;
-  overflow-x: hidden;
 }

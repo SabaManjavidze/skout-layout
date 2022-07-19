@@ -1,13 +1,11 @@
-(menuBtn = document.querySelector("#btn")),
-  (pageWrapper = document.querySelector("#page-wrapper")),
-  (sidebarBtns = document.querySelectorAll(".item")),
-  (dotBtns = document.querySelectorAll(".dot-btn"));
+const sidebarBox = document.querySelector("#box"),
+  menuBtn = document.querySelector("#btn"),
+  pageWrapper = document.querySelector("#page-wrapper"),
+  sidebarBtns = document.querySelectorAll(".item"),
+  dotBtns = document.querySelectorAll(".dot-btn");
 
-dotBtns;
-
-const activeTab = () => {
+(() => {
   sidebarBtns.forEach((item) => {
-    // console.log(sidebarBtns);
     const href = window.location.href.split("/");
     if (
       href[href.length - 1]
@@ -17,7 +15,7 @@ const activeTab = () => {
       item.classList.add("active");
     }
   });
-};
+})();
 const essentials_info = [
   {
     title: "System Patching",
@@ -70,14 +68,13 @@ const cyberEssentials = () => {
     essentialsList.appendChild(li);
   });
 };
-window.onload = () => {
+(() => {
   const splitHref = window.location.href.split("/");
   const currPage = splitHref[splitHref.length - 1].replace(".html", "");
   if (currPage === "home") {
     cyberEssentials();
   }
-  activeTab();
-};
+})();
 menuBtn.addEventListener("click", (event) => {
   menuBtn.classList.toggle("active");
   sidebarBox.classList.toggle("active");

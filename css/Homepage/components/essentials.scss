@@ -1,4 +1,4 @@
-@import "../style";
+@import "../../style";
 
 .essentials {
   font-family: "Aclonica", sans-serif;
@@ -9,6 +9,12 @@
     margin-left: 45px;
     margin-bottom: 60px;
   }
+}
+.essentials-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
 }
 
 .essential-card {

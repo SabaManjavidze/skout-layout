@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +25,18 @@ body {
 
 .flex-column {
   flex-direction: column;
+}
+
+.mt-6 {
+  margin-top: 60px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.mt-4 {
+  margin-top: 40px;
 }
 
 .btn {

@@ -39,31 +39,6 @@ body {
   margin-top: 40px;
 }
 
-.contained {
-  background-color: #22bf95;
-  color: white;
-  transition: 0.4s;
-}
-.contained:hover {
-  background-color: #1d9777;
-  transition: 0.4s;
-}
-
-.outlined {
-  border: 2px solid #22bf95;
-  transition: 0.3s;
-  background: transparent !important;
-}
-@media (min-width: 1200px) {
-  .outlined {
-    border: 2px solid white;
-  }
-}
-.outlined:hover {
-  background-color: rgb(243, 243, 243);
-  transition: 0.4s;
-}
-
 .tip {
   align-items: center;
   padding: 30px 0px;
@@ -89,6 +64,15 @@ body {
 .tip.expanded .tip-info {
   opacity: 1;
   transition: 1.5s;
+}
+.tip.expanded .tip-info img {
+  transition: 0.6s;
+}
+@media (min-width: 1200px) {
+  .tip.expanded .tip-info img {
+    width: auto;
+    height: 390px;
+  }
 }
 .tip.expanded .tip-text h1 {
   opacity: 0;
@@ -129,6 +113,11 @@ body {
 .tip-title {
   justify-content: space-between;
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .tip-title {
+    font-size: 25px;
+  }
 }
 
 .tip-info {
@@ -181,4 +170,9 @@ body {
   text-align: center;
   letter-spacing: 1.5px;
   color: #e5e5e5;
+}
+@media (min-width: 1200px) {
+  .tip-text h1 {
+    width: 90px;
+  }
 } /*# sourceMappingURL=tips.css.map */

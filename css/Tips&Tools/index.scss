@@ -15,19 +15,29 @@
     white-space: nowrap;
   }
 }
+.logo {
+  margin: 0;
+}
 .tabs-cont {
   margin-top: -30px;
   position: sticky;
   top: 10px;
+  z-index: 15;
 }
 .tips,
-.faqs,
-.glossary {
+.faqs {
   margin-top: 80px;
-  border-top: 2px solid #e5e5e5;
-  padding: 20px 45px;
+  border-top: $divider-border;
+  padding: 20px 30px;
   @include for-size(desktop-up) {
     padding: 20px 15vh;
+  }
+}
+.glossary {
+  border-top: $divider-border;
+  .glossary-logo {
+    margin: 30px 15vh;
+    background-color: white;
   }
 }
 .tabs {
@@ -37,10 +47,9 @@
   box-shadow: -8px 9px 16px rgba(0, 0, 0, 0.116);
   background-color: white;
   @include for-size(desktop-up) {
-    // padding: 50px;
     justify-content: center;
     width: 770px;
-    height: 80px;
+    height: 70px;
   }
   span {
     transform: translateY(30%);
@@ -54,12 +63,6 @@
     justify-content: center;
     width: 100%;
     padding: 0px 3.5vh;
-    // @include for-size(desktop-up) {
-    //   padding: 0px 15vh;
-    // }
-    // @include for-size(tablet-portrait-up) {
-    //   padding: 0px 5.5vh;
-    // }
   }
 }
 .tab-title {
@@ -70,7 +73,7 @@
   font-size: 15px;
   margin: 15px 0px;
   @include for-size(tablet-portrait-up) {
-    font-size: 18px;
+    font-size: 13px;
     margin: 20px 0px;
   }
   line-height: 20px;

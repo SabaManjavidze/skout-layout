@@ -39,6 +39,37 @@ body {
   margin-top: 40px;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  width: 245px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn h4 {
+  color: #22bf95;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .btn h4 {
+    color: white;
+  }
+}
+
 .contained {
   background-color: #22bf95;
   color: white;
@@ -59,9 +90,13 @@ body {
     border: 2px solid white;
   }
 }
+.outlined:hover {
+  background: rgba(34, 191, 149, 0.5019607843) !important;
+  transition: 0.4s;
+}
 @media (min-width: 1200px) {
   .outlined:hover {
-    background: rgba(255, 255, 255, 0.336);
+    background: rgba(255, 255, 255, 0.336) !important;
     transition: 0.4s;
   }
 }
@@ -84,26 +119,37 @@ body {
   }
 }
 
+.logo {
+  margin: 0;
+}
+
 .tabs-cont {
   margin-top: -30px;
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
+  z-index: 15;
 }
 
 .tips,
-.faqs,
-.glossary {
+.faqs {
   margin-top: 80px;
-  border-top: 2px solid #e5e5e5;
-  padding: 20px 45px;
+  border-top: 3px solid #e5e5e5;
+  padding: 20px 30px;
 }
 @media (min-width: 1200px) {
   .tips,
-  .faqs,
-  .glossary {
+.faqs {
     padding: 20px 15vh;
   }
+}
+
+.glossary {
+  border-top: 3px solid #e5e5e5;
+}
+.glossary .glossary-logo {
+  margin: 30px 15vh;
+  background-color: white;
 }
 
 .tabs {
@@ -117,7 +163,7 @@ body {
   .tabs {
     justify-content: center;
     width: 770px;
-    height: 80px;
+    height: 70px;
   }
 }
 .tabs span {
@@ -151,7 +197,7 @@ body {
 }
 @media (min-width: 600px) {
   .tab-title {
-    font-size: 18px;
+    font-size: 13px;
     margin: 20px 0px;
   }
 }
@@ -170,4 +216,4 @@ body {
 
 .tip-list {
   margin-top: 50px;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

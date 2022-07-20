@@ -45,7 +45,7 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 25px;
-  width: 255px;
+  width: 245px;
   height: 50px;
   margin-top: 20px;
   font-weight: 100;
@@ -92,7 +92,7 @@ body {
 }
 @media (min-width: 1200px) {
   .outlined:hover, .sidebar-btn:hover {
-    background: rgba(255, 255, 255, 0.336);
+    background: rgba(255, 255, 255, 0.336) !important;
     transition: 0.4s;
   }
 }
@@ -136,7 +136,9 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: "Actor", sans-serif;
+  position: relative;
   letter-spacing: 1px;
+  position: relative;
   width: -webkit-fill-available;
   width: -moz-available;
   padding: 10px 30px;
@@ -148,9 +150,9 @@ body {
 }
 
 #btn {
-  position: fixed;
+  position: absolute;
   z-index: 16;
-  top: 35px;
+  top: 15px;
   right: 35px;
   cursor: pointer;
   transition: right 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
@@ -183,6 +185,7 @@ body {
 @media (min-width: 1200px) {
   .sidebar-btn-cont {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -192,6 +195,14 @@ body {
 .sidebar-btn:last-of-type {
   width: 150px;
   margin-left: 25px;
+}
+@media (min-width: 1200px) {
+  .sidebar-btn {
+    margin-top: 0;
+  }
+}
+.sidebar-btn h4 {
+  font-size: 16px;
 }
 
 #btn.active div {
@@ -254,6 +265,7 @@ body {
     justify-content: center;
     width: 100%;
     margin-top: 0px;
+    margin-left: 35px;
   }
 }
 #items .item {

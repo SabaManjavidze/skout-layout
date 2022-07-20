@@ -11,6 +11,7 @@ body {
 }
 $black: #343838;
 $dullWhite: #f6f6f6;
+$divider-border: 3px solid #e5e5e5;
 $gray: #7f7f7f;
 $primary-color: #22bf95;
 $secondary-color: #1d9777;
@@ -58,7 +59,7 @@ $facebook-color: #3f62a9;
   align-items: center;
   background-color: white;
   border-radius: 25px;
-  width: 255px;
+  width: 245px;
   height: 50px;
   margin-top: 20px;
   font-weight: 100;
@@ -101,8 +102,10 @@ $facebook-color: #3f62a9;
   transition: 0.3s;
   background: transparent !important;
   &:hover {
+    background: #22bf9580 !important;
+    transition: 0.4s;
     @include for-size(desktop-up) {
-      background: rgba(255, 255, 255, 0.336);
+      background: rgba(255, 255, 255, 0.336) !important;
       transition: 0.4s;
     }
     // color: white;

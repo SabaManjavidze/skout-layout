@@ -39,31 +39,132 @@ body {
   margin-top: 40px;
 }
 
-.glossary {
-  background-image: linear-gradient(
-    190deg,
-    hsl(0deg, 0%, 100%) 6%,
-    hsl(172deg, 23%, 93%) 42%,
-    hsl(173deg, 23%, 86%) 57%,
-    hsl(173deg, 23%, 79%) 70%,
-    hsl(194deg, 39%, 77%) 81%,
-    hsl(211deg, 49%, 79%) 91%,
-    hsl(249deg, 39%, 81%) 100%
-  );
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  width: 245px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn h4 {
+  color: #22bf95;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  text-align: center;
+  letter-spacing: 1.66667px;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .btn h4 {
+    color: white;
+  }
+}
+
+.contained {
+  background-color: #22bf95;
+  color: white;
+  transition: 0.4s;
+}
+.contained:hover {
+  background-color: #1d9777;
+  transition: 0.4s;
+}
+
+.outlined {
+  border: 2px solid #22bf95;
+  transition: 0.3s;
+  background: transparent !important;
+}
+@media (min-width: 1200px) {
+  .outlined {
+    border: 2px solid white;
+  }
+}
+.outlined:hover {
+  background: rgba(34, 191, 149, 0.5019607843) !important;
+  transition: 0.4s;
+}
+@media (min-width: 1200px) {
+  .outlined:hover {
+    background: rgba(255, 255, 255, 0.336) !important;
+    transition: 0.4s;
+  }
+}
+
+.glossary-cont {
+  background-image: linear-gradient(190deg, hsl(0deg, 0%, 100%) 6%, hsl(172deg, 23%, 93%) 42%, hsl(173deg, 23%, 86%) 57%, hsl(173deg, 23%, 79%) 70%, hsl(194deg, 39%, 77%) 81%, hsl(211deg, 49%, 79%) 91%, hsl(249deg, 39%, 81%) 100%);
+}
+@media (min-width: 1200px) {
+  .glossary-cont {
+    background-image: linear-gradient(190deg, hsl(0deg, 0%, 100%) 0%, hsl(172deg, 23%, 93%) 12%, hsl(173deg, 23%, 86%) 29%, hsl(173deg, 23%, 79%) 50%, hsl(194deg, 39%, 77%) 70%, hsl(211deg, 49%, 79%) 86%, hsl(249deg, 39%, 81%) 100%);
+  }
 }
 
 .accordion {
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  height: 30vh;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 599px) {
+  .accordion {
+    overflow-y: scroll;
+  }
+}
+@media (min-width: 1200px) {
+  .accordion {
+    width: 40vh;
+    height: 80%;
+    margin: 25px 0;
+    left: 0;
+    transform: none;
+    height: auto;
+    margin-top: 0;
+    overflow: hidden;
+  }
 }
 
 .glossary-content {
   height: 60vh;
   margin-top: 5vh;
 }
+@media (min-width: 1200px) {
+  .glossary-content {
+    margin-top: -5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .glossary-search-cont {
   position: relative;
+}
+
+.glossary-cont {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .glossary-cont {
+    flex-direction: row;
+  }
 }
 
 .glossary-search {
@@ -90,13 +191,55 @@ body {
   font-weight: 400;
 }
 
+.glossary-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5vh;
+}
+@media (min-width: 1200px) {
+  .glossary-list {
+    align-items: center;
+  }
+}
+.glossary-list .glossary-li {
+  list-style-type: none;
+  text-align: left;
+  font-family: "Aclonica";
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  line-height: 32px;
+  color: #7f7f7f;
+}
+.glossary-list .glossary-li:hover {
+  color: #a1a1a1;
+  transition: 0.4s;
+}
+@media (min-width: 1200px) {
+  .glossary-list .glossary-li {
+    font-size: 18px;
+  }
+}
+
 .slider-nav {
   justify-content: space-around;
-  padding: 50px 0px;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  flex-direction: column;
+  padding: 5px 20px;
 }
 .slider-nav svg {
   cursor: pointer;
   transition: 0.2s;
+}
+@media (min-width: 1200px) {
+  .slider-nav svg {
+    width: 40px;
+    margin-top: 15px;
+  }
 }
 .slider-nav svg:hover {
   transform: scale(1.08);
@@ -124,7 +267,7 @@ body {
 }
 @media (min-width: 600px) {
   .glossary-title h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
 }
 
@@ -140,9 +283,10 @@ body {
   padding-left: 20px;
   border-left: 2px solid #22bf95;
 }
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   .glossary-desc article {
-    font-size: 16px;
+    font-size: 18px;
+    width: 50%;
     padding-left: 50px;
   }
-} /*# sourceMappingURL=glossary.css.map */
+}/*# sourceMappingURL=glossary.css.map */

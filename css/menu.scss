@@ -41,7 +41,9 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
   justify-content: space-between;
   align-items: center;
   font-family: "Actor", sans-serif;
+  position: relative;
   letter-spacing: 1px;
+  position: relative;
   width: -webkit-fill-available;
   width: -moz-available;
   padding: 10px 30px;
@@ -50,9 +52,9 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
   }
 }
 #btn {
-  position: fixed;
+  position: absolute;
   z-index: 16;
-  top: 35px;
+  top: 15px;
   right: 35px;
   cursor: pointer;
   &.active {
@@ -80,12 +82,19 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
   margin-top: 20px;
   @include for-size(desktop-up) {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .sidebar-btn {
   &:last-of-type {
     width: 150px;
     margin-left: 25px;
+  }
+  @include for-size(desktop-up) {
+    margin-top: 0;
+  }
+  h4 {
+    font-size: 16px;
   }
   transition: 0.3s ease-in-out;
   @extend .btn;
@@ -151,6 +160,7 @@ $easing: cubic-bezier(0.6, 0.05, 0.28, 0.91);
     justify-content: center;
     width: 100%;
     margin-top: 0px;
+    margin-left: 35px;
   }
   .item {
     position: relative;

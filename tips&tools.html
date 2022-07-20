@@ -26,7 +26,7 @@
   <body>
     <div class="main-menu">
       <header class="header">
-        <h1>SKOUT</h1>
+        <h1 class="logo">SKOUT</h1>
         <!-- nav bar menu -->
         <div id="btn">
           <div id="top"></div>
@@ -98,6 +98,7 @@
     <div class="glossary" id="glossary">
       <svg
         width="250"
+        class="glossary-logo"
         viewBox="0 0 187 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -109,96 +110,83 @@
           fill="#B2B2B2"
         />
       </svg>
-
-      <div class="accordion d-flex justify-center mt-5">
-        <div class="glossary-search-cont">
-          <input
-            type="text"
-            class="glossary-search"
-            placeholder="Select a word"
-          />
-          <svg
-            class="glossary-expand"
-            width="20"
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="0.5"
-              y="7.5"
-              width="1"
-              height="10"
-              transform="rotate(-45 0.5 7.5)"
-              fill="#22BF95"
-            ></rect>
-            <rect
-              x="13.9351"
-              y="6.79291"
-              width="1"
-              height="10"
-              transform="rotate(45 13.9351 6.79291)"
-              fill="#22BF95"
-            ></rect>
-          </svg>
+      <div class="glossary-cont">
+        <div class="accordion mt-4">
+          <ul class="glossary-list">
+            <li class="glossary-li">Botent</li>
+            <li class="glossary-li">Breach</li>
+            <li class="glossary-li">Cloud</li>
+            <li class="glossary-li">DDoS</li>
+            <li class="glossary-li">Domain</li>
+            <li class="glossary-li">Endpoint</li>
+            <li class="glossary-li">Exploit</li>
+            <li class="glossary-li">Firewall</li>
+            <li class="glossary-li">CloudIP Addressli</li>
+            <li class="glossary-li">Malware</li>
+            <li class="glossary-li">Penetration Test</li>
+            <li class="glossary-li">Phishing/Spearshishing</li>
+            <li class="glossary-li">Ransomware</li>
+            <li class="glossary-li">Session Hijacking</li>
+            <li class="glossary-li">Social Engineering</li>
+          </ul>
+          <div class="slider-nav d-flex">
+            <svg
+              width="35"
+              viewBox="0 0 27 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5 26.2109C6.59644 26.2109 1 20.6145 1 13.7109C1 6.80738 6.59644 1.21094 13.5 1.21094C20.4036 1.21094 26 6.80738 26 13.7109C26 20.6145 20.4036 26.2109 13.5 26.2109Z"
+                stroke="#22BF95"
+                stroke-opacity="0.5"
+              />
+              <path
+                d="M13.1428 8.35376L7.42854 14.068L13.1428 19.7823"
+                stroke="#22BF95"
+                stroke-linecap="round"
+              />
+              <path
+                d="M18.8572 14.0681H7.42861"
+                stroke="#22BF95"
+                stroke-linecap="round"
+              />
+            </svg>
+            <svg
+              width="35"
+              viewBox="0 0 27 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5 26.2109C20.4036 26.2109 26 20.6145 26 13.7109C26 6.80738 20.4036 1.21094 13.5 1.21094C6.59644 1.21094 1 6.80738 1 13.7109C1 20.6145 6.59644 26.2109 13.5 26.2109Z"
+                stroke="#22BF95"
+                stroke-opacity="0.5"
+              />
+              <path
+                d="M13.8572 8.35376L19.5715 14.068L13.8572 19.7823"
+                stroke="#22BF95"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.14282 14.0681H19.5714"
+                stroke="#22BF95"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
-      <div class="glossary-content">
-        <div class="glossary-title d-flex justify-center">
-          <h1>ransomware</h1>
+        <div class="glossary-content">
+          <div class="glossary-title d-flex justify-center">
+            <h1>ransomware</h1>
+          </div>
+          <div class="glossary-desc d-flex justify-center">
+            <article>
+              Malicious software that blocks access to a system until a ransom
+              is paid.
+            </article>
+          </div>
         </div>
-        <div class="glossary-desc d-flex justify-center">
-          <article>
-            Malicious software that blocks access to a system until a ransom is
-            paid.
-          </article>
-        </div>
-      </div>
-      <div class="slider-nav d-flex">
-        <svg
-          width="35"
-          viewBox="0 0 27 27"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M13.5 26.2109C6.59644 26.2109 1 20.6145 1 13.7109C1 6.80738 6.59644 1.21094 13.5 1.21094C20.4036 1.21094 26 6.80738 26 13.7109C26 20.6145 20.4036 26.2109 13.5 26.2109Z"
-            stroke="#22BF95"
-            stroke-opacity="0.5"
-          />
-          <path
-            d="M13.1428 8.35376L7.42854 14.068L13.1428 19.7823"
-            stroke="#22BF95"
-            stroke-linecap="round"
-          />
-          <path
-            d="M18.8572 14.0681H7.42861"
-            stroke="#22BF95"
-            stroke-linecap="round"
-          />
-        </svg>
-        <svg
-          width="35"
-          viewBox="0 0 27 27"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M13.5 26.2109C20.4036 26.2109 26 20.6145 26 13.7109C26 6.80738 20.4036 1.21094 13.5 1.21094C6.59644 1.21094 1 6.80738 1 13.7109C1 20.6145 6.59644 26.2109 13.5 26.2109Z"
-            stroke="#22BF95"
-            stroke-opacity="0.5"
-          />
-          <path
-            d="M13.8572 8.35376L19.5715 14.068L13.8572 19.7823"
-            stroke="#22BF95"
-            stroke-linecap="round"
-          />
-          <path
-            d="M8.14282 14.0681H19.5714"
-            stroke="#22BF95"
-            stroke-linecap="round"
-          />
-        </svg>
       </div>
     </div>
     <div class="faqs" id="faqs">
@@ -222,16 +210,19 @@
     </div>
     <footer>
       <div class="footer">
-        <div class="footer-pages">
-          <h2 class="page-link">blog</h2>
-          <h2 class="page-link">company</h2>
-          <h2 class="page-link">terms & conditions</h2>
-          <h2 class="page-link">privacy policy</h2>
-          <h2 class="page-link">careers</h2>
-          <div class="call-soc">
-            <h2 class="page-link">call the soc</h2>
-            <h2 class="phone-number">1-855-838-4500</h2>
+        <div class="footer-content">
+          <div class="footer-pages">
+            <h2 class="page-link">blog</h2>
+            <h2 class="page-link">company</h2>
+            <h2 class="page-link">terms & conditions</h2>
+            <h2 class="page-link">privacy policy</h2>
+            <h2 class="page-link">careers</h2>
+            <div class="call-soc">
+              <h2 class="page-link">call the soc</h2>
+              <h2 class="phone-number">1-855-838-4500</h2>
+            </div>
           </div>
+          <div class="contacts"></div>
         </div>
         <div class="footer-bottom">
           <div class="social-links">
@@ -473,7 +464,6 @@
             </svg>
           </div>
         </div>
-        <div class="contacts"></div>
       </div>
     </footer>
     <script src="./js/index.js"></script>

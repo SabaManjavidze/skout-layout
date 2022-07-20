@@ -1,7 +1,7 @@
 @import "../../style";
 @import "../../mediaQueries";
 
-.glossary {
+.glossary-cont {
   //   background-image: url("https://img.freepik.com/free-photo/abstract-blur-pastel-beautiful-peach-pink-color-sky-warm-tone-background-design-as-banner-slide-show-others_1258-71932.jpg?w=2000");
   //   background-position: right;
   background-image: linear-gradient(
@@ -14,17 +14,63 @@
     hsl(211deg 49% 79%) 91%,
     hsl(249deg 39% 81%) 100%
   );
+  @include for-size(desktop-up) {
+    background-image: linear-gradient(
+      190deg,
+      hsl(0deg 0% 100%) 0%,
+      hsl(172deg 23% 93%) 12%,
+      hsl(173deg 23% 86%) 29%,
+      hsl(173deg 23% 79%) 50%,
+      hsl(194deg 39% 77%) 70%,
+      hsl(211deg 49% 79%) 86%,
+      hsl(249deg 39% 81%) 100%
+    );
+  }
 }
 .accordion {
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  height: 30vh;
+  @include for-size(phone-only) {
+    overflow-y: scroll;
+  }
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  @include for-size(desktop-up) {
+    width: 40vh;
+    height: 80%;
+    margin: 25px 0;
+    left: 0;
+    transform: none;
+    height: auto;
+    margin-top: 0;
+    overflow: hidden;
+  }
 }
 .glossary-content {
   height: 60vh;
   margin-top: 5vh;
+  @include for-size(desktop-up) {
+    margin-top: -5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .glossary-search-cont {
   position: relative;
+}
+.glossary-cont {
+  display: flex;
+  flex-direction: column;
+  @include for-size(desktop-up) {
+    flex-direction: row;
+  }
 }
 .glossary-search {
   width: 300px;
@@ -41,12 +87,47 @@
     font-weight: 400;
   }
 }
+.glossary-list {
+  display: flex;
+  flex-direction: column;
+  @include for-size(desktop-up) {
+    align-items: center;
+  }
+  justify-content: center;
+  margin-top: 5vh;
+  .glossary-li {
+    list-style-type: none;
+    text-align: left;
+    font-family: "Aclonica";
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: #a1a1a1;
+      transition: 0.4s;
+    }
+    @include for-size(desktop-up) {
+      font-size: 18px;
+    }
+    line-height: 32px;
+    color: #7f7f7f;
+  }
+}
 .slider-nav {
   justify-content: space-around;
-  padding: 50px 0px;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  flex-direction: column;
+  padding: 5px 20px;
   svg {
     cursor: pointer;
     transition: 0.2s;
+    @include for-size(desktop-up) {
+      width: 40px;
+      margin-top: 15px;
+    }
     &:hover {
       transform: scale(1.08);
       transition: 0.3s;
@@ -66,7 +147,7 @@
     font-style: normal;
     font-weight: 500;
     @include for-size(tablet-portrait-up) {
-      font-size: 60px;
+      font-size: 70px;
     }
     font-size: 50px;
     line-height: 54px;
@@ -82,8 +163,9 @@
   article {
     font-family: "Aclonica";
     font-weight: 600;
-    @include for-size(tablet-portrait-up) {
-      font-size: 16px;
+    @include for-size(desktop-up) {
+      font-size: 18px;
+      width: 50%;
       padding-left: 50px;
     }
     font-size: 18px;

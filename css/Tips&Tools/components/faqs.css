@@ -52,12 +52,17 @@ body {
   width: 100%;
   margin-top: 45px;
 }
+@media (min-width: 1200px) {
+  .question {
+    margin-top: 7vh;
+  }
+}
 
 .question-logo {
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 3rem;
   line-height: 80px;
   display: flex;
   margin: 0;
@@ -66,6 +71,12 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #e5e5e5;
+}
+@media (min-width: 1200px) {
+  .question-logo {
+    font-size: 7rem;
+    line-height: 33px;
+  }
 }
 
 .question-title-cont {
@@ -84,6 +95,13 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #191919;
+}
+@media (min-width: 1200px) {
+  .question-title {
+    width: 55vh;
+    font-size: 25px;
+    line-height: 33px;
+  }
 }
 
 .question-expand-icon {
@@ -120,6 +138,11 @@ body {
   color: #22bf95;
   transition: 0.3s;
   cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .more-questions-btn {
+    font-size: 20px;
+  }
 }
 .more-questions-btn:focus {
   outline: none;

@@ -45,7 +45,7 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 25px;
-  width: 255px;
+  width: 245px;
   height: 50px;
   margin-top: 20px;
   font-weight: 100;
@@ -90,9 +90,13 @@ body {
     border: 2px solid white;
   }
 }
+.outlined:hover {
+  background: rgba(34, 191, 149, 0.5019607843) !important;
+  transition: 0.4s;
+}
 @media (min-width: 1200px) {
   .outlined:hover {
-    background: rgba(255, 255, 255, 0.336);
+    background: rgba(255, 255, 255, 0.336) !important;
     transition: 0.4s;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -20,6 +20,15 @@
     .tip-info {
       opacity: 1;
       transition: 1.5s;
+      img {
+        transition: 0.6s;
+      }
+      @include for-size(desktop-up) {
+        img {
+          width: auto;
+          height: 390px;
+        }
+      }
     }
     .tip-text {
       h1 {
@@ -63,6 +72,9 @@
 .tip-title {
   justify-content: space-between;
   width: 100%;
+  @include for-size(desktop-up) {
+    font-size: 25px;
+  }
 }
 .tip-info {
   display: flex;
@@ -101,6 +113,9 @@
     margin: 0;
     opacity: 1;
     transition: 0.3s;
+    @include for-size(desktop-up) {
+      width: 90px;
+    }
     font-family: "Actor";
     font-weight: 300;
     font-size: 100px;

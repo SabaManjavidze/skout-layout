@@ -23,52 +23,6 @@ body {
   flex-direction: column;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: #22bf95;
-  border-radius: 25px;
-  width: 255px;
-  height: 50px;
-  margin-top: 20px;
-  font-weight: 100;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
-  text-transform: uppercase;
-}
-.btn h4 {
-  font-family: "Acme";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 13px;
-  line-height: 24px;
-  /* identical to box height, or 240% */
-  text-align: center;
-  letter-spacing: 1.66667px;
-  text-transform: uppercase;
-}
-
-.contained {
-  background-color: #22bf95;
-  color: white;
-  transition: 0.4s;
-}
-.contained:hover {
-  background-color: #1d9777;
-  transition: 0.4s;
-}
-
-.outlined {
-  border: 1px solid #22bf95;
-  transition: 0.3s;
-}
-.outlined:hover {
-  background-color: rgb(243, 243, 243);
-  transition: 0.4s;
-}
-
 .slick-dots {
   position: absolute;
   list-style-type: none;
@@ -131,4 +85,4 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
-}/*# sourceMappingURL=carousel.css.map */
+} /*# sourceMappingURL=carousel.css.map */

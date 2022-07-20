@@ -1,4 +1,5 @@
 @import "../style";
+@import "../mediaQueries";
 .main-text {
   width: 385px;
   font-size: 80px;
@@ -8,9 +9,16 @@
   font-family: "Actor", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
+  @include for-size(desktop-up) {
+    margin-top: 5vh;
+    width: auto;
+    white-space: nowrap;
+  }
 }
 .tabs-cont {
-  margin-top: 50px;
+  margin-top: -30px;
+  position: sticky;
+  top: 10px;
 }
 .tips,
 .faqs,
@@ -18,14 +26,22 @@
   margin-top: 80px;
   border-top: 2px solid #e5e5e5;
   padding: 20px 45px;
+  @include for-size(desktop-up) {
+    padding: 20px 15vh;
+  }
 }
 .tabs {
   justify-content: space-between;
   border-top: 4px solid $primary-color;
-  border-radius: 5px;
-  box-shadow: -1px 2px 3px rgb(0 0 0 / 6%);
-  //   background-color: $dullWhite;
-  //   width: 80%;
+  border-radius: 10px;
+  box-shadow: -8px 9px 16px rgba(0, 0, 0, 0.116);
+  background-color: white;
+  @include for-size(desktop-up) {
+    // padding: 50px;
+    justify-content: center;
+    width: 770px;
+    height: 80px;
+  }
   span {
     transform: translateY(30%);
     background-color: #e5e5e5;
@@ -33,17 +49,30 @@
     height: 60%;
   }
   div {
-    padding-left: 5.5vh;
-    padding-right: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 3.5vh;
+    // @include for-size(desktop-up) {
+    //   padding: 0px 15vh;
+    // }
+    // @include for-size(tablet-portrait-up) {
+    //   padding: 0px 5.5vh;
+    // }
   }
 }
 .tab-title {
-  margin: 10px 0px;
   text-decoration: none;
   text-align: center;
   font-family: "Acme";
   font-weight: 300;
-  font-size: 13px;
+  font-size: 15px;
+  margin: 15px 0px;
+  @include for-size(tablet-portrait-up) {
+    font-size: 18px;
+    margin: 20px 0px;
+  }
   line-height: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;

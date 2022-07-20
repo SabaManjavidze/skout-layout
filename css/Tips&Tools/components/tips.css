@@ -39,33 +39,6 @@ body {
   margin-top: 40px;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: #22bf95;
-  border-radius: 25px;
-  width: 255px;
-  height: 50px;
-  margin-top: 20px;
-  font-weight: 100;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
-  text-transform: uppercase;
-}
-.btn h4 {
-  font-family: "Acme";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 13px;
-  line-height: 24px;
-  /* identical to box height, or 240% */
-  text-align: center;
-  letter-spacing: 1.66667px;
-  text-transform: uppercase;
-}
-
 .contained {
   background-color: #22bf95;
   color: white;
@@ -77,8 +50,14 @@ body {
 }
 
 .outlined {
-  border: 1px solid #22bf95;
+  border: 2px solid #22bf95;
   transition: 0.3s;
+  background: transparent !important;
+}
+@media (min-width: 1200px) {
+  .outlined {
+    border: 2px solid white;
+  }
 }
 .outlined:hover {
   background-color: rgb(243, 243, 243);
@@ -98,9 +77,14 @@ body {
   border-top: 2px solid #22bf95;
 }
 .tip.expanded {
-  height: 700px;
+  height: 100vh;
   transition: 0.5s;
   transition: 0.4s;
+}
+@media (min-width: 1200px) {
+  .tip.expanded {
+    height: 60vh;
+  }
 }
 .tip.expanded .tip-info {
   opacity: 1;
@@ -115,6 +99,11 @@ body {
   margin-left: -20px;
   margin-top: 0px;
   transition: 0.5s;
+}
+@media (min-width: 1200px) {
+  .tip.expanded .tip-text h3 {
+    font-size: 55px;
+  }
 }
 .tip.expanded span {
   margin-top: -10px;
@@ -150,6 +139,12 @@ body {
   opacity: 0;
   transition: 0.2s;
 }
+@media (min-width: 1200px) {
+  .tip-info {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .tip-info h4 {
   font-family: "Aclonica";
   font-style: normal;
@@ -157,6 +152,12 @@ body {
   font-size: 15px;
   line-height: 30px;
   color: #191919;
+}
+@media (min-width: 1200px) {
+  .tip-info h4 {
+    width: 50%;
+    font-size: 25px;
+  }
 }
 
 .tip-text {
@@ -180,4 +181,4 @@ body {
   text-align: center;
   letter-spacing: 1.5px;
   color: #e5e5e5;
-}/*# sourceMappingURL=tips.css.map */
+} /*# sourceMappingURL=tips.css.map */

@@ -5,6 +5,8 @@ const tips = [
     desc: `There’s nothing hackers love more than a dismissed update reminder.
      We keep our team’s computers in shape and up to date so that they aren’t subject to
      attacks that could otherwise be avoided.
+     <br>
+     <br>
      Not properly updating your systems makes you an easy to reach target 
      and hackers will often go after the lowest hanging fruit.
      When it comes to maintaining a strong cybersecurity network the best thing a user can do is to prevent problems

@@ -39,52 +39,6 @@ body {
   margin-top: 40px;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: #22bf95;
-  border-radius: 25px;
-  width: 255px;
-  height: 50px;
-  margin-top: 20px;
-  font-weight: 100;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
-  text-transform: uppercase;
-}
-.btn h4 {
-  font-family: "Acme";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 13px;
-  line-height: 24px;
-  /* identical to box height, or 240% */
-  text-align: center;
-  letter-spacing: 1.66667px;
-  text-transform: uppercase;
-}
-
-.contained {
-  background-color: #22bf95;
-  color: white;
-  transition: 0.4s;
-}
-.contained:hover {
-  background-color: #1d9777;
-  transition: 0.4s;
-}
-
-.outlined {
-  border: 1px solid #22bf95;
-  transition: 0.3s;
-}
-.outlined:hover {
-  background-color: rgb(243, 243, 243);
-  transition: 0.4s;
-}
-
 .question-list {
   margin-top: 50px;
   padding-left: 15px;
@@ -147,6 +101,11 @@ body {
   transform: rotate(0deg);
 }
 
+.faq-bottom {
+  padding-bottom: 5vh;
+  margin-top: 10vh;
+}
+
 .more-questions-btn {
   background-color: transparent;
   border: none;
@@ -168,4 +127,4 @@ body {
 .more-questions-btn:hover {
   color: #1d9777;
   transition: 0.4s;
-}/*# sourceMappingURL=faqs.css.map */
+} /*# sourceMappingURL=faqs.css.map */

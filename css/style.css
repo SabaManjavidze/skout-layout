@@ -44,17 +44,16 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
-  color: #22bf95;
   border-radius: 25px;
   width: 255px;
   height: 50px;
   margin-top: 20px;
   font-weight: 100;
   cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
   text-transform: uppercase;
 }
 .btn h4 {
+  color: #22bf95;
   font-family: "Acme";
   font-style: normal;
   font-weight: 100;
@@ -64,6 +63,11 @@ body {
   text-align: center;
   letter-spacing: 1.66667px;
   text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .btn h4 {
+    color: white;
+  }
 }
 
 .contained {
@@ -77,10 +81,18 @@ body {
 }
 
 .outlined {
-  border: 1px solid #22bf95;
+  border: 2px solid #22bf95;
   transition: 0.3s;
+  background: transparent !important;
 }
-.outlined:hover {
-  background-color: rgb(243, 243, 243);
-  transition: 0.4s;
+@media (min-width: 1200px) {
+  .outlined {
+    border: 2px solid white;
+  }
+}
+@media (min-width: 1200px) {
+  .outlined:hover {
+    background: rgba(255, 255, 255, 0.336);
+    transition: 0.4s;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -35,55 +39,9 @@ body {
   margin-top: 40px;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: #22bf95;
-  border-radius: 25px;
-  width: 255px;
-  height: 50px;
-  margin-top: 20px;
-  font-weight: 100;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
-  text-transform: uppercase;
-}
-.btn h4 {
-  font-family: "Acme";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 13px;
-  line-height: 24px;
-  /* identical to box height, or 240% */
-  text-align: center;
-  letter-spacing: 1.66667px;
-  text-transform: uppercase;
-}
-
-.contained {
-  background-color: #22bf95;
-  color: white;
-  transition: 0.4s;
-}
-.contained:hover {
-  background-color: #1d9777;
-  transition: 0.4s;
-}
-
-.outlined {
-  border: 1px solid #22bf95;
-  transition: 0.3s;
-}
-.outlined:hover {
-  background-color: rgb(243, 243, 243);
-  transition: 0.4s;
-}
-
 .footer {
   margin-top: 40px;
-  padding: 30px;
+  padding: 30px 50px;
   padding-bottom: 70px;
 }
 
@@ -94,9 +52,9 @@ footer {
 
 .footer-pages {
   -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-gap: 20%;
-       column-gap: 20%;
+  column-count: 2;
+  -moz-column-gap: 30%;
+  column-gap: 30%;
   flex-wrap: wrap;
 }
 
@@ -106,7 +64,7 @@ footer {
   font-family: "Acme";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 34px;
   letter-spacing: 1.66667px;
   text-transform: uppercase;
@@ -146,9 +104,9 @@ footer {
 
 .social-links {
   -moz-column-count: 2;
-       column-count: 2;
+  column-count: 2;
   -moz-column-gap: 20%;
-       column-gap: 20%;
+  column-gap: 20%;
   flex-wrap: wrap;
 }
 .social-links div {
@@ -156,8 +114,8 @@ footer {
   cursor: pointer;
 }
 .social-links div svg {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 .youtube-link svg path {
@@ -206,14 +164,14 @@ footer {
 }
 
 .contact {
-  border-bottom: 1.5px solid #22bf95;
+  border-bottom: 2.5px solid #22bf95;
   height: 150px;
   padding: 10px 0px;
   display: flex;
   justify-content: space-between;
 }
 .contact:first-of-type {
-  border-top: 1.5px solid #22bf95;
+  border-top: 2.5px solid #22bf95;
 }
 
 .contact-title-cont {
@@ -229,8 +187,10 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
   color: #7f7f7f;
+  line-height: 40px;
+  margin-top: 0;
+  width: 15vh;
 }
 
 .contact-info {
@@ -238,7 +198,7 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 25px;
   color: #4c4c4c;
 }
 
@@ -261,4 +221,4 @@ footer {
 }
 .view-map:focus {
   outline: none;
-}/*# sourceMappingURL=footer.css.map */
+} /*# sourceMappingURL=footer.css.map */

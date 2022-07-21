@@ -52,6 +52,11 @@ body {
   cursor: pointer;
   text-transform: uppercase;
 }
+@media (min-width: 1200px) {
+  .btn, .sidebar-btn {
+    width: 210px;
+  }
+}
 .btn h4, .sidebar-btn h4 {
   color: #22bf95;
   font-family: "Acme";
@@ -59,7 +64,6 @@ body {
   font-weight: 100;
   font-size: 13px;
   line-height: 24px;
-  /* identical to box height, or 240% */
   text-align: center;
   letter-spacing: 1.66667px;
   text-transform: uppercase;
@@ -89,6 +93,10 @@ body {
   .outlined, .sidebar-btn {
     border: 2px solid white;
   }
+}
+.outlined:hover, .sidebar-btn:hover {
+  background: rgba(34, 191, 149, 0.5019607843) !important;
+  transition: 0.4s;
 }
 @media (min-width: 1200px) {
   .outlined:hover, .sidebar-btn:hover {
@@ -190,6 +198,7 @@ body {
 }
 
 .sidebar-btn {
+  width: 210px;
   transition: 0.3s ease-in-out;
 }
 .sidebar-btn:last-of-type {
@@ -291,7 +300,7 @@ body {
     font-family: "Acme";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 24px;
     text-align: center;
     white-space: nowrap;

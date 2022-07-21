@@ -64,7 +64,6 @@ $facebook-color: #3f62a9;
   margin-top: 20px;
   font-weight: 100;
   cursor: pointer;
-  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
   text-transform: uppercase;
   h4 {
     color: $primary-color;
@@ -76,12 +75,9 @@ $facebook-color: #3f62a9;
     font-weight: 100;
     font-size: 13px;
     line-height: 24px;
-    /* identical to box height, or 240% */
     text-align: center;
     letter-spacing: 1.66667px;
     text-transform: uppercase;
-
-    // color: #22bf95;
   }
 }
 

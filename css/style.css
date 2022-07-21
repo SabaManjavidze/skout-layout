@@ -90,7 +90,7 @@ body {
   }
 }
 .outlined:hover {
-  background: rgba(34, 191, 149, 0.5019607843) !important;
+  background: rgba(34, 191, 149, 0.2117647059) !important;
   transition: 0.4s;
 }
 @media (min-width: 1200px) {

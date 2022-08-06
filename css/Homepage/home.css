@@ -59,7 +59,6 @@ body {
   font-weight: 100;
   font-size: 13px;
   line-height: 24px;
-  /* identical to box height, or 240% */
   text-align: center;
   letter-spacing: 1.66667px;
   text-transform: uppercase;
@@ -91,7 +90,7 @@ body {
   }
 }
 .outlined:hover {
-  background: rgba(34, 191, 149, 0.5019607843) !important;
+  background: rgba(34, 191, 149, 0.2117647059) !important;
   transition: 0.4s;
 }
 @media (min-width: 1200px) {

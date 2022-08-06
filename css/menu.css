@@ -152,31 +152,35 @@ body {
   }
 }
 
-#btn {
+.menu-btn {
   position: absolute;
   z-index: 16;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
   right: 35px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   transition: right 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 }
-#btn.active {
+.menu-btn.active {
   z-index: 17;
 }
 @media (min-width: 1200px) {
-  #btn {
+  .menu-btn {
     display: none;
   }
 }
-#btn div {
+.menu-btn div {
   width: 35px;
   height: 5px;
   margin-bottom: 8px;
   background-color: #f6f6f6;
   transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, background-color 250ms;
 }
-#btn div:last-of-type {
+.menu-btn div:last-of-type {
   margin-bottom: 0;
 }
 
@@ -213,17 +217,17 @@ body {
   font-size: 16px;
 }
 
-#btn.active div {
+.menu-btn.active div {
   background-color: #22bf95;
 }
-#btn.active #top {
+.menu-btn.active .top {
   transform: translateY(10px) rotate(-135deg);
 }
-#btn.active #middle {
+.menu-btn.active .middle {
   opacity: 0;
   transform: rotate(135deg);
 }
-#btn.active #bottom {
+.menu-btn.active .bottom {
   transform: translateY(-15px) rotate(-45deg);
 }
 
@@ -276,7 +280,7 @@ body {
     margin-left: 35px;
   }
 }
-#items .item {
+#items li {
   position: relative;
   cursor: pointer;
   font-size: 20px;
@@ -292,7 +296,7 @@ body {
   color: #7f7f7f;
 }
 @media (min-width: 1200px) {
-  #items .item {
+  #items li {
     margin-left: 25px;
     margin-right: 25px;
     padding-left: 0px;
@@ -307,33 +311,33 @@ body {
     color: #ffffff;
   }
 }
-#items .item a {
+#items li a {
   color: inherit;
   text-decoration: none;
 }
-#items .item.active {
+#items li.active {
   border-left: 4px solid #22bf95;
 }
 @media (min-width: 1200px) {
-  #items .item.active {
+  #items li.active {
     border-bottom: 4px solid white;
     border-left: none;
   }
 }
-#items .item:hover {
+#items li:hover {
   color: #22bf95;
   transform: scale(1.03, 1);
 }
 @media (min-width: 1200px) {
-  #items .item:hover {
+  #items li:hover {
     color: #f6f6f6;
   }
 }
-#items .item:hover a {
+#items li:hover a {
   color: inherit;
 }
 
-#btn,
-#btn * {
+.menu-btn,
+.menu-btn * {
   will-change: transform;
 }/*# sourceMappingURL=menu.css.map */

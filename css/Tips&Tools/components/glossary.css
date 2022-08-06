@@ -90,7 +90,7 @@ body {
   }
 }
 .outlined:hover {
-  background: rgba(34, 191, 149, 0.5019607843) !important;
+  background: rgba(34, 191, 149, 0.2117647059) !important;
   transition: 0.4s;
 }
 @media (min-width: 1200px) {
@@ -252,7 +252,7 @@ body {
   right: 20px;
 }
 
-.glossary-title h1 {
+.glossary-title h2 {
   font-family: "Actor";
   font-style: normal;
   font-weight: 500;
@@ -265,7 +265,7 @@ body {
   text-transform: uppercase;
 }
 @media (min-width: 600px) {
-  .glossary-title h1 {
+  .glossary-title h2 {
     font-size: 70px;
   }
 }
@@ -273,7 +273,7 @@ body {
 .glossary-desc {
   margin-top: 20px;
 }
-.glossary-desc article {
+.glossary-desc p {
   font-family: "Aclonica";
   font-weight: 600;
   font-size: 18px;
@@ -283,7 +283,7 @@ body {
   border-left: 2px solid #22bf95;
 }
 @media (min-width: 1200px) {
-  .glossary-desc article {
+  .glossary-desc p {
     font-size: 18px;
     width: 50%;
     padding-left: 50px;

@@ -142,7 +142,7 @@
   right: 20px;
 }
 .glossary-title {
-  h1 {
+  h2 {
     font-family: "Actor";
     font-style: normal;
     font-weight: 500;
@@ -160,7 +160,7 @@
 }
 .glossary-desc {
   margin-top: 20px;
-  article {
+  p {
     font-family: "Aclonica";
     font-weight: 600;
     @include for-size(desktop-up) {
